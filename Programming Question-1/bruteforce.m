@@ -1,4 +1,4 @@
-function inver=findinternalinversion(data)
+function inver=bruteforce(data)
 	inver=0;
 	i = 1;
 	while i <= length(data)

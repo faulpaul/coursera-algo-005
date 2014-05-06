@@ -9,10 +9,13 @@
 inversion=0;
 data=zeros(1);
 
-data=(openfile ('VerySmallTestFile.txt')); %%590
-%%data=(openfile ('SmallTestFile.txt')); %%242698 
-%%data=(openfile ('IntegerArray.txt'));
+%%data=(openfile ('testfiles/TestFile.txt')); %%3
+%%data=(openfile ('testfiles/VerySmallTestFile.txt')); %%590
+%%data=(openfile ('testfiles/SmallTestFile.txt')); %%242698 
+data=(openfile ('testfiles/IntegerArray.txt'));
 
 %%divide & conquer
-inversion = findinversion(data)
-inversion = findinternalinversion(data)
+format long;
+inversion = findinversion(data);
+disp (inversion)
+%%inversion = bruteforce(data)
