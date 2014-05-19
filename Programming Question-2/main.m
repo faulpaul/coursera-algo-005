@@ -8,6 +8,7 @@
 %% Includes:
 %% openfile.m
 %% quicksort.m
+%% swap.m
 
 %% Main
 %%Variables
@@ -21,5 +22,6 @@ data=zeros(1);
 %%[data, numbers] = quicksort(data,1,length(data),'first');
 %%[data, numbers] = quicksort(data,1,length(data),'last');
 [data, numbers] = quicksort(data,1,length(data),'median');
+data
 numbers
 
