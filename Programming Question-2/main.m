@@ -14,10 +14,10 @@
 %%Variables
 data=zeros(1);
 					  %% size  first  last  median
- data=(openfile ('testfiles/10.txt'));  %% 10    25     29    21
+%% data=(openfile ('testfiles/10.txt'));  %% 10    25     29    21
 %% data=(openfile ('testfiles/100.txt')); %% 100   615      587      518
 %% data=(openfile ('testfiles/1000.txt')); %% 1000 10297 10184  8921
-%% data=(openfile ('testfiles/QuickSort.txt'));
+ data=(openfile ('testfiles/QuickSort.txt')); %% 10000 162085 164123 138382
 
 %%[data, numbers] = quicksort(data,1,length(data),'first');
 %%[data, numbers] = quicksort(data,1,length(data),'last');
